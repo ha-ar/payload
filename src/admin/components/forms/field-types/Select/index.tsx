@@ -65,7 +65,7 @@ const Select: React.FC<Props> = (props) => {
     if (!readOnly) {
       let newValue;
       if (!selectedOption) {
-        newValue = null;
+        newValue = undefined;
       } else if (hasMany) {
         if (Array.isArray(selectedOption)) {
           newValue = selectedOption.map((option) => option.value);
